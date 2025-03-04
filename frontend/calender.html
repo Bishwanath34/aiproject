@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Prediction Calendar</title>
+    <link rel="stylesheet" href="calender.css" />
+  </head>
+  <body>
+    <div class="calendar-container">
+      <h1>Weather Prediction Calendar</h1>
+      <div class="controls">
+        <select id="month-select"></select>
+        <select id="year-select"></select>
+      </div>
+      <div id="calendar"></div>
+      <div id="selected-date"></div>
+      <div id="prediction-container" style="display: none">
+        <h2>Weather Prediction</h2>
+        <p id="weather-report">Loading...</p>
+      </div>
+    </div>
+    <script src="calender.js"></script>
+  </body>
+</html>

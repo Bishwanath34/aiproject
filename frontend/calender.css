@@ -1,0 +1,139 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  background-image: url("images/weather.jpg"); /* Background Image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #333;
+}
+
+/* Container for Calendar & Weather Report */
+.calendar-container {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Title */
+h1 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+/* Dropdown Controls */
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+select {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+
+/* Calendar Grid */
+#calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  margin-top: 10px;
+}
+
+/* Weekday Headers */
+.calendar-header {
+  font-weight: bold;
+  text-align: center;
+  padding: 8px;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Calendar Day Cells */
+.calendar-day,
+.empty-cell {
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.calendar-day {
+  background-color: #f0f0f0;
+}
+
+.calendar-day:hover {
+  background-color: #45a049;
+  color: white;
+}
+
+/* Selected Date Display */
+#selected-date {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Weather Prediction Container */
+#prediction-container {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Weather Report Text */
+#prediction-container h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+#prediction-container p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #45a049;
+}

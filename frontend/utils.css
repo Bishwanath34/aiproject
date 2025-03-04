@@ -1,0 +1,126 @@
+
+.bg-red{
+    background-color: rgb(255, 255, 255);
+}
+
+.flex{
+    display: flex;
+}
+
+.items-center{
+    align-items: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.valo1{
+    background-image: url('');
+    background-size: cover;
+    height: 858px;
+    width: 100%;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+.valo2{
+    position: relative;
+}
+.valo2 img{
+    background-size: cover;
+    height: 858px;
+    width: 100%;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: flex-end;
+    filter: brightness(50%);
+
+}
+.img-text{
+    position: absolute;
+    top: 25%;
+    color: rgba(247, 247, 240, 0.897);
+    padding: 10px;
+
+}
+
+.container{
+    background-color: #0f1923;
+    min-width:100%;
+    padding: 15px 9%;
+}
+
+
+.container .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    gap: 15px;
+
+}
+
+.container .box-container .box{
+    margin-left: 35px;
+    overflow: hidden;
+
+}
+
+.container .box-container .box img{
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.container .box-container .box img:hover{
+    transform: scale(1.06);
+}
+
+
+.container .box-container .box h1{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 25px ;
+    
+}
+.polaroid {
+    width: 82.48%;
+    background-color: white;
+    margin-bottom: 25px;
+  }
+
+.v1{
+    position: relative;
+  }
+.v1 video{
+    filter: brightness(70%);
+}
+
+.v1 button {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    color: white;
+    padding: 16px 40px;
+    text-align: center;
+    text-decoration: none;
+    font-size:20px;
+    margin: 2px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    outline: rgb(255, 255, 255) solid 1px;
+    outline-offset: 3px;
+}
+
+  .button1 {
+    background-color: #FD4556; 
+    color: rgba(247, 247, 240, 0.897);
+    border: 10px #ffffff;
+    
+  }
+  .button1:hover {
+    background-color: #ffffff;
+    color: black;
+  }
+  

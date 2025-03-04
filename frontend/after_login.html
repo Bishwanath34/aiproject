@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arina</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utils.css">
+    <link
+    rel="stylesheet"
+    data-purpose="Layout StyleSheet"
+    title="Web Awesome"
+    href="/css/app-wa-09b459cf485d4b1f3304947240314c05.css?vsn=d"
+  >
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css"
+    >
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-duotone-solid.css"
+    >
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-thin.css"
+    >
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css"
+    >
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-regular.css"
+    >
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-light.css"
+    >
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body style="background-color: #ffffff;">
+    <div >
+        <header>
+            <nav class="flex bg-red ">
+                <ul class="navbar flex " style="font-size: 15px; font-weight:900; font-family: anti; color: rgb(78, 46, 46);">
+                    <img src="images/ARINA LOGO.png" width="auto" height="65px" style="margin-left: 12px;">
+                    <li> <a href="after_login.html" style="text-decoration:none; color: rgb(78, 46, 46);">HOME</a></li>
+                    <li><a href="#main-about" style="text-decoration:none; color: rgb(78, 46, 46);">ABOUT US</a></li>
+                    <li> <a href="calender.html" style="text-decoration:none; color: rgb(78, 46, 46);">WEATHER REPORT</a></li>
+                    <li><a href="crop.html" style="text-decoration:none; color: rgb(78, 46, 46);">CROP REPORT</a></li>
+                    <li><a href="#contact" style="text-decoration:none; color: rgb(78, 46, 46);">SOCIALS</a></li>
+                    <!-- Language Dropdown -->
+                <li class="language-dropdown">
+                  <span>LANGUAGE ▾</span>
+                  <div class="dropdown-content">
+                      <div id="google_translate_element"></div>
+                  </div>
+              </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <!-- Google Translate API Script -->
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+          {pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.VERTICAL},
+          'google_translate_element'
+      );
+  }
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<!-- CSS for Scrollable Dropdown and Hiding "Powered by Google Translate" -->
+<style>
+  .language-dropdown {
+      position: relative;
+      cursor: pointer;
+      padding: 10px;
+  }
+
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      width: 180px; /* Set width for dropdown */
+      z-index: 1000;
+      padding: 10px;
+      top: 100%;
+      left: 0;
+      max-height: 200px; /* Set max height */
+      overflow-y: auto; /* Enable vertical scroll */
+  }
+
+  .language-dropdown:hover .dropdown-content {
+      display: block;
+  }
+
+  /* Hide the "Powered by Google Translate" text */
+  .goog-te-gadget {
+      font-size: 0px !important;
+  }
+  .goog-te-gadget span,
+  .goog-te-gadget img {
+      display: none !important;
+  }
+
+  /* Hide the horizontal scrollbar */
+.goog-te-menu-frame {
+  width: 100% !important;
+  max-width: 100% !important;
+  border: none !important;
+  overflow-x: hidden !important; /* Prevents horizontal scrolling */
+}
+
+/* Ensures the dropdown menu doesn't overflow */
+.goog-te-menu-frame iframe {
+  width: 100% !important;
+  max-width: 100% !important;
+  border: none !important;
+  overflow-x: hidden !important; /* No horizontal scroll */
+  display: block;
+}
+
+/* Remove extra margins that cause overflow */
+.goog-te-gadget {
+  white-space: nowrap !important;
+  display: inline-block !important;
+}
+
+/* Hide the Google Translate branding */
+.goog-te-gadget span,
+.goog-te-gadget img {
+  display: none !important;
+}
+
+/* Make sure the dropdown stays within its container */
+.goog-te-menu-frame {
+  max-width: 200px !important; /* Adjust width as needed */
+}
+</style>
+
+
+
+       <!-- header section ended -->
+
+    <!-- Home section started -->
+
+    <div id="home" class="main-home">
+
+      <div class="home">
+          <div class="home-left-content" >
+              <span >Welcome to ARINA</span>
+              <h2 style="color: white;">We take care our<br> Farmers Requirements</h2>
+              <p class="lorem" style="color: #F0F3BD; font-weight: 900;"></p>
+          
+                  
+          </div>
+
+          <div class="home-right-content">
+              <img src="images/Weather-cuate.svg" alt="">
+          </div>
+      </div>
+  </div>
+
+
+  
+
+<!-- home section ends -->
+
+
+
+<!-- About us section started -->
+
+  <div id="main-about" class="main-about">
+
+      <div class="about-heading">About Us</div>
+
+      <div class="inner-main-about">
+          <div class="about-inner-content-left">
+              <img src="images/Gardening-bro.svg" style="height: 600px; width: auto;" alt="">
+          </div>
+
+          <div class="about-inner-content">
+              <div class="about-right-content">
+                  <h2>ARINA</h2>
+                  <p class="lorem">ARINA is an innovative web-based tool designed to enhance farmers experience. </p>
+                  <p class="aboutsec-content"> 
+
+                    This AI-powered system is designed to provide accurate weather forecasts and crop reports based on user inputs such as date, 
+                    soil type, crop type, temperature, humidity, and other environmental factors. The model leverages machine learning and real-time 
+                    data analytics to generate insights that help farmers and agricultural stakeholders make informed decisions about crop cultivation 
+                    and management. 
+                      
+                  </p>
+                      <button class="aboutbtn">Read More</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+<!-- About us section ends -->
+<div class="technology">
+<div class="main-technology">
+    
+    <div class="inner-technology">
+        <span></span>
+        <i class="fa-solid fa-person"></i>
+        <h2>ANSH JOHNSON</h2>
+        <p>Enter Your Daily Tasks , based on it get your personalized Suggestions</p>
+    </div>
+
+    <div class="inner-technology">
+        <span></span>
+        <i class="fa-solid fa-person"></i>
+        <h2>OM</h2>
+        <p>Our Device Detects Your Motion and Alerts Your Family or Freinds if There is some Sudden Movements</p>
+    </div>
+
+    <div class="inner-technology">
+        <span></span>
+        <i class="fa-solid fa-person"></i>
+        <h2>Pill Dispensor</h2>
+        <p>Get Your Daily Medicne Alerts</p>
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+<!-- footer -->
+
+<footer  id="contact"
+class="text-center text-lg-start text-white"
+style="background-color: #1c2331 ; height: 100%; font-size: medium;" 
+>
+
+<section
+ class="d-flex justify-content-between p-4"
+ style="background-color: #02C39A"
+ >
+
+<div class="me-5 " style="margin-top:0;">
+<span>Get connected with us on social networks:</span>
+</div>
+
+
+
+<div>
+<a href="" class="text-white me-4">
+<i class="fab fa-facebook-f"></i>
+</a>
+<a href="" class="text-white me-4">
+<i class="fab fa-twitter"></i>
+</a>
+<a href="" class="text-white me-4">
+<i class="fab fa-google"></i>
+</a>
+<a href="" class="text-white me-4">
+<i class="fab fa-instagram"></i>
+</a>
+<a href="" class="text-white me-4">
+<i class="fab fa-linkedin"></i>
+</a>
+<a href="" class="text-white me-4">
+<i class="fab fa-github"></i>
+</a>
+</div>
+
+</section>
+
+
+
+<section class="">
+<div class="container text-center text-md-start mt-5">
+
+<div class="row mt-3">
+
+<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+<h6 class="text-uppercase fw-bold">ARINA</h6>
+<hr
+    class="mb-4 mt-0 d-inline-block mx-auto"
+    style="width: 60px; background-color: #F0F3BD; height: 2px "
+    />
+<p style="font-size: smaller;">
+  ARINA is an innovative web-based tool designed to enhance farmers experience.
+</p>
+</div>
+
+<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+<h6 class="text-uppercase fw-bold">Products</h6>
+<hr
+    class="mb-4 mt-0 d-inline-block mx-auto"
+    style="width: 60px; background-color: #F0F3BD; height: 2px"
+    />
+<p>
+  <a href="calender.html" class="text-white" style="font-size: smaller;">Weather Prediction</a>
+</p>
+<p>
+  <a href="crop.html" class="text-white" style="font-size: smaller;">Fertilizer Recommendation</a>
+</p>
+<p>
+  <a href="#!" class="text-white"></a>
+</p>
+<p>
+  <a href="#!" class="text-white"></a>
+</p>
+</div>
+
+<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+<h6 class="text-uppercase fw-bold">Useful links</h6>
+<hr
+    class="mb-4 mt-0 d-inline-block mx-auto"
+    style="width: 60px; background-color: #F0F3BD; height: 2px"
+    />
+<p>
+  <a href="#!" class="text-white" style="font-size: smaller;"></a>
+</p>
+<p>
+  <a href="#!" class="text-white" style="font-size: smaller;">User Privacy</a>
+</p>
+<p>
+  <a href="#!" class="text-white" style="font-size: smaller;">Terms and Services</a>
+</p>
+<p>
+  <a href="#!" class="text-white" style="font-size: smaller;">Help</a>
+</p>
+</div>
+
+<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+<h6 class="text-uppercase fw-bold">Contact</h6>
+<hr
+    class="mb-4 mt-0 d-inline-block mx-auto"
+    style="width: 60px; background-color: #F0F3BD; height: 2px"
+    />
+<p style="font-size: smaller;"><i class="fas fa-home mr-3" ></i> </p>
+<p style="font-size: smaller;"><i class="fas fa-envelope mr-3"></i> </p>
+<p style="font-size: smaller;"><i class="fas fa-phone mr-3"></i> </p>
+
+</div>
+
+</div>
+
+</div>
+</section>
+
+<div
+class="text-center p-3"
+style="background-color: rgba(0, 0, 0, 0.2); font-size: smaller;"
+>
+© 2025 Copyright:
+<a class="text-white" href="https://mdbootstrap.com/"
+>All rights preserved</a
+>
+</div>
+
+</footer>
+  
+<!-- footer ended -->
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

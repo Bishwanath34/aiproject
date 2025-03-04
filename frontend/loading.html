@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Animation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #111;
+            overflow: hidden;
+        }
+        .container {
+            position: relative;
+            width: 50px;
+            height: 50px;
+        }
+        .dot {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #0ff;
+            border-radius: 50%;
+            animation: moveUp 1.5s ease-in-out infinite;
+        }
+        .dot:nth-child(2) { left: 20px; animation-delay: 0.2s; }
+        .dot:nth-child(3) { left: 40px; animation-delay: 0.4s; }
+        .dot:nth-child(4) { left: 60px; animation-delay: 0.6s; }
+        
+        @keyframes moveUp {
+            0% { transform: translateY(20px); opacity: 0.3; }
+            50% { transform: translateY(0); opacity: 1; }
+            100% { transform: translateY(20px); opacity: 0.3; }
+        }
+
+        @keyframes formCube {
+            0% { transform: translateY(0); }
+            100% { transform: translate(10px, 10px); }
+        }
+
+        @keyframes moveToCorners {
+            0% { transform: translate(10px, 10px); }
+            100% { transform: translate(var(--x), var(--y)); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+    <script>
+        setTimeout(() => {
+            document.querySelectorAll('.dot').forEach((dot, index) => {
+                dot.style.animation = 'formCube 0.5s ease-in-out forwards';
+            });
+            
+            setTimeout(() => {
+                const positions = [
+                    { x: '-200px', y: '-200px' },
+                    { x: '200px', y: '-200px' },
+                    { x: '-200px', y: '200px' },
+                    { x: '200px', y: '200px' }
+                ];
+                document.querySelectorAll('.dot').forEach((dot, index) => {
+                    dot.style.setProperty('--x', positions[index].x);
+                    dot.style.setProperty('--y', positions[index].y);
+                    dot.style.animation = 'moveToCorners 1s ease-in-out forwards';
+                });
+            }, 600);
+        }, 1500);
+    </script>
+</body>
+</html>
